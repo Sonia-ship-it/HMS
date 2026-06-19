@@ -1,6 +1,0 @@
-com\sonia\advancedjava\hospital\repository\PatientRepository.class
-com\sonia\advancedjava\hospital\config\DataSeeder.class
-com\sonia\advancedjava\hospital\controller\PatientController.class
-com\sonia\advancedjava\hospital\HospitalApplication.class
-com\sonia\advancedjava\hospital\model\Patient.class
-com\sonia\advancedjava\hospital\service\PatientService.class

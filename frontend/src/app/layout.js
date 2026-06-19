@@ -1,4 +1,5 @@
 import { Lexend } from "next/font/google";
+import { AuthProvider } from "@/components/providers/AuthProvider";
 import "./globals.css";
 
 const lexend = Lexend({
@@ -9,15 +10,16 @@ const lexend = Lexend({
 });
 
 export const metadata = {
-  title: "HMS — Hospital Management System",
-  description:
-    "Secure hospital management dashboard to authenticate users, track admissions, and manage patient registries.",
+  title: "SmartHMS — Hospital Appointment & Queue",
+  description: "Smart Hospital Appointment & Queue Management System",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={lexend.variable}>
-      <body>{children}</body>
+      <body className={lexend.className}>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }
